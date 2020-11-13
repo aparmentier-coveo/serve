@@ -140,13 +140,13 @@ if __name__ == '__main__':
     requirements = ['Pillow', 'psutil', 'future', 'packaging']
 
     setup(
-        name='torchserve',
+        name='coveo-torchserve',
         version=version,
-        description='TorchServe is a tool for serving neural net models for inference',
-        author='PyTorch Serving team',
-        author_email='noreply@noreply.com',
+        description='A fork of torchserve 0.3.0 with a patch applied for better logging control.',
+        author='PyTorch Serving team and Alex',
+        author_email='aparmentier@coveo.com',
         long_description=pypi_description(),
-        url='https://github.com/pytorch/serve.git',
+        url='https://github.com/aparmentier-coveo/serve',
         keywords='TorchServe PyTorch Serving Deep Learning Inference AI',
         packages=pkgs,
         cmdclass={
