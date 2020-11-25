@@ -134,9 +134,9 @@ if __name__ == '__main__':
     setup(
         name='coveo-torchserve',
         version=version,
-        description='TorchServe is a tool for serving neural net models for inference',
+        description='A fork of torchserve 0.2.0 with a patch applied for better logging control.',
         author='PyTorch Serving team and Alex',
-        author_email='noreply@noreply.com',
+        author_email='aparmentier@coveo.com',
         long_description=pypi_description(),
         url='https://github.com/aparmentier-coveo/serve',
         keywords='TorchServe PyTorch Serving Deep Learning Inference AI',
@@ -149,7 +149,7 @@ if __name__ == '__main__':
         install_requires=requirements,
         entry_points={
             'console_scripts': [
-                'torchserve=ts.model_server:start',
+                'coveo-torchserve=ts.model_server:start',
             ]
         },
         include_package_data=True,
